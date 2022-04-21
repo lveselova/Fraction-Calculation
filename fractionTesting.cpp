@@ -15,7 +15,17 @@ void arithmeticTesting (){
     Fraction d;
     int trueNum = 0;
     int trueDen = 1;
-    int arr[11][4] = {{287,70,168,12}, {2,12,23,53}, {12,124,10,2}, {13,1,10,2}, {5,-2,15,20}, {-13,21,-10,11}, {8,9,37,-11}, {83,-9,17,20}, {45,32,16,18}, {63,1,1,74}, {287,70,168,12}};
+    int arr[11][4] = {{287,70,168,12},
+                      {2,12,23,53},
+                      {12,124,10,2},
+                      {13,1,10,2},
+                      {5,-2,15,20},
+                      {-13,21,-10,11},
+                      {8,9,37,-11},
+                      {83,-9,17,20},
+                      {45,32,16,18},
+                      {63,1,1,74},
+                      {2,3,168,12}};
     
     int i =sizeof(arr)/sizeof(*arr)-1;
     // Addition Testing
@@ -101,11 +111,12 @@ void arithmeticTesting (){
     }
     
     if (pass == 40)
-        cout << "ALL TESTS PASSED";
+        cout << "ALL TESTS PASSED \n";
 }
 
 void relationalOperatorTesting (){
     int pass = 0;
+    int count = 0;
     Fraction a;
     Fraction b;
     Fraction c;
@@ -121,6 +132,7 @@ void relationalOperatorTesting (){
         for (int k = 0; k< sizeof(arr)/sizeof(*arr)-1; k++){
             b.setNumbers(arr[k][0], arr[k][1]);
             cout << "Testing Equality: " << a << " == " << b;
+            count++;
             if ((a == b) == (a.getFloat() == b.getFloat())){
                 cout << "..passed " << "\n";
                 pass++;
@@ -139,6 +151,7 @@ void relationalOperatorTesting (){
         for (int k = 0; k< sizeof(arr)/sizeof(*arr)-1; k++){
             b.setNumbers(arr[k][0], arr[k][1]);
             cout << "Testing InEquality: " << a << " != " << b;
+            count++;
             if ((a != b) == (a.getFloat() != b.getFloat())){
                 cout << "..passed " << "\n";
                 pass++;
@@ -159,6 +172,7 @@ void relationalOperatorTesting (){
         for (int k = 0; k< sizeof(arr)/sizeof(*arr)-1; k++){
             b.setNumbers(arr[k][0], arr[k][1]);
             cout << "Testing Less Than: " << a << " < " << b;
+            count++;
             if ((a < b) == (a.getFloat() < b.getFloat())){
                 cout << "..passed " << "\n";
                 pass++;
@@ -176,6 +190,7 @@ void relationalOperatorTesting (){
         for (int k = 0; k< sizeof(arr)/sizeof(*arr)-1; k++){
             b.setNumbers(arr[k][0], arr[k][1]);
             cout << "Testing Less Than Equal To: " << a << " <= " << b;
+            count++;
             if ((a <= b) == (a.getFloat() <= b.getFloat())){
                 cout << "..passed " << "\n";
                 pass++;
@@ -193,6 +208,7 @@ void relationalOperatorTesting (){
         for (int k = 0; k< sizeof(arr)/sizeof(*arr)-1; k++){
             b.setNumbers(arr[k][0], arr[k][1]);
             cout << "Testing Less Than: " << a << " > " << b;
+            count++;
             if ((a > b) == (a.getFloat() > b.getFloat())){
                 cout << "..passed " << "\n";
                 pass++;
@@ -209,27 +225,27 @@ void relationalOperatorTesting (){
         a.setNumbers(arr[i][0], arr[i][1]);
         for (int k = 0; k< sizeof(arr)/sizeof(*arr)-1; k++){
             b.setNumbers(arr[k][0], arr[k][1]);
-            cout << "Testing Greater Than Equal To: " << a << " <= " << b;
+            cout << "Testing Greater Than Equal To: " << a << " >= " << b;
+            count++;
             if ((a >= b) == (a.getFloat() >= b.getFloat())){
                 cout << "..passed " << "\n";
                 pass++;
             }
             else 
-                cout << "..FAIL" << a << ' '<< b << ' '<< a.getFloat() << ' ' << b.getFloat() << "\n";
+                cout << "..FAIL" << a << ' '<< b.getNum() << b.getDen() << ' '<< a.getFloat() << ' ' << b.getFloat() << (a >= b) << (a.getFloat() >= b.getFloat()) << "\n";
         }
         i--;
     }
+    if (pass == count)
+        cout << "ALL TESTS PASSED\n";
 
     
     
 }
 
 
-void checkAssignmentOperators (){
-    
-}
 
 int main (){
-    //arithmeticTesting();
+    arithmeticTesting();
     relationalOperatorTesting();
 }

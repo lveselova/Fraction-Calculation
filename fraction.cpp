@@ -11,6 +11,10 @@ Author:      L Veselova
 Fraction::Fraction(int a,int b){
     this->num = a;
     this->den = b;
+    if (den < 0){
+        this->num = this->num * -1;
+        this->den = this->den * -1;
+    }
     //this->reduceFraction();
 
 }
@@ -23,6 +27,10 @@ Fraction::Fraction(){
 void Fraction::setNumbers(int a,int b){
     this->num = a;
     this->den = b;
+    if (den < 0){
+        this->num = this->num * -1;
+        this->den = this->den * -1;
+    }
     //this->reduceFraction();
 }
 
@@ -42,16 +50,18 @@ int Fraction::getDen(){
 
 
 ostream& operator<<(ostream &o, const Fraction& f){
+    if (f.num * f.den < 0)
+        o << "-";
     if (f.den == 1 || f.num == 0)
-        o << f.num;
+        o << abs(f.num);
     
     else if (abs(f.num) > abs(f.den)){
-        o << f.num / f.den;
+        o << abs(f.num / f.den);
         if (f.num % f.den != 0)
             o << "_" << abs(f.num % f.den) << '/' << abs(f.den);
     }
     else
-        o << f.num << '/' << f.den;
+        o << abs(f.num) << '/' << abs(f.den);
 
     return o;
 }

@@ -1,0 +1,12 @@
+# ninja log v5
+35	3404	1650497893808753690	CMakeFiles/Fraction_Calculation.dir/fractionTesting.cpp.o	8e526a9167e73922
+5	1170	1650564945758294065	CMakeFiles/Fraction_Calculation.dir/fraction.cpp.o	3939f465a01d3f54
+2	2255	1650565459292646564	CMakeFiles/Fraction_Calculation.dir/driver.cpp.o	f77202cec455eb2c
+2255	2467	1650565459508018719	Fraction_Calculation	53acb3064fec5b49
+3797	4030	1650565932592100981	Fraction-Testing	457cbc5dcf65e98a
+2	3796	1650565932346715120	CMakeFiles/Fraction-Testing.dir/fractionTesting.cpp.o	6de92d08130b36a9
+14	376	1650561484031042361	CMakeFiles/Fraction_Calculation.dir/calc.cpp.o	72a4db050ed18115
+3	616	1650565929169799301	CMakeFiles/Fraction-Testing.dir/calc.cpp.o	5ad58c0084217d40
+1	3797	1650565932350646879	CMakeFiles/Fraction-Testing.dir/fraction.cpp.o	2cf8f994ba56d7b8
+3	3693	1650565996957638768	CMakeFiles/Fraction_Calculation.dir/driver.cpp.o	f77202cec455eb2c
+3694	3924	1650565997191071122	Fraction_Calculation	86f87812c290b6ee
