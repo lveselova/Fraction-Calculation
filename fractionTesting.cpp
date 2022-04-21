@@ -1,4 +1,7 @@
-
+/*
+Author @Liza Veselova
+Program: Testing for arithmetic and operational functions for fraction class.
+*/
 
 #include "fraction_exception.h"
 #include "fraction.h"
