@@ -1,6 +1,8 @@
 /*
 File:        Fraction.cpp
 Author:      L Veselova
+Description: Fraction class that serves as a wrapper to hide fractional calculations and 
+comparisons between fractional objects. Overrides arithmetic and operational functions.
 */
 
 #include <iostream>
