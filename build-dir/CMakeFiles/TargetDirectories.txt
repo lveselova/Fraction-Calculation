@@ -1,0 +1,4 @@
+/Users/liza/Downloads/Fraction-Calculation-main-2/build-dir/CMakeFiles/Fraction_Calculation.dir
+/Users/liza/Downloads/Fraction-Calculation-main-2/build-dir/CMakeFiles/Fraction-Testing.dir
+/Users/liza/Downloads/Fraction-Calculation-main-2/build-dir/CMakeFiles/edit_cache.dir
+/Users/liza/Downloads/Fraction-Calculation-main-2/build-dir/CMakeFiles/rebuild_cache.dir
