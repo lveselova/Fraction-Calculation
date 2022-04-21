@@ -12,21 +12,21 @@ It utilizes a Fraction class to store the numerical data as well as perform calc
 ## Setup
 To run this project, install it locally:
 
-1) Within the project enter the build-dir 
+1) Within the project run
 ```
-cd build-dir
+$ cmake ./CMakeLists.txt
 ```
-and build the project with 
+2) Then to build the project
 ```
-cmake ../CMakeLists.txt
+$ make
 ```
-2) Within the build-dir run
+and finally to run the program enter 
 ```
-./Fraction_Calculation
+$ ./Fraction_Calculation
 ```
 3) When the prompt appears:
 ```
-? 
+$  ? 
 ```
 enter fractional values with a operand separated by spaces.
 Mixed numbers should be entered as such:
