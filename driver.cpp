@@ -41,7 +41,7 @@ int main() {
                 num += whole * den;
             }
 
-            else { // otherwise simply numerator and denominator
+            else if (frac1.find('/') > 0 && frac1.find('/') < 9 ){ // for fraction entries
                 for (i = 0; i < frac1.find('/'); i++){
                     num = num * 10 + (frac1[i] - '0');
                 }
@@ -49,13 +49,19 @@ int main() {
                     den = den * 10 + (frac1[i] - '0');
                 }
             }
+            else { // for whole numbered entries
+                for (i = 0; i < frac1.size(); i++){
+                    num = num * 10 + (frac1[i] - '0');
+                }
+                den = 1;
+            }
             Fraction a (num,den);
 
             //repeat same steps for second fraction
             whole = 0;
             num = 0;
             den = 0;
-            if (frac2.find('_') > 0 && frac2.find('_') < 5 ){
+            if (frac2.find('_') > 0 && frac2.find('_') < 5 ){ //for mixed numbers
                 for (i = 0; i < frac2.find('_'); i++){
                     whole = whole * 10 + (frac2[i] - '0');
                 }
@@ -68,13 +74,20 @@ int main() {
                 num += whole * den;
             }
 
-            else {
+            else if (frac2.find('/') > 0 && frac2.find('/') < 9 ){ // for fractions
                 for (i = 0; i < frac2.find('/'); i++){
                     num = num * 10 + (frac2[i] - '0');
                 }
                 for (i = i; i < frac2.size(); i++){
                     den = den * 10 + (frac2[i] - '0');
                 }
+
+            }
+            else { // for whole numbered entries
+                for (i = 0; i < frac2.size(); i++) {
+                    num = num * 10 + (frac2[i] - '0');
+                }
+                den = 1;
             }
             Fraction b (num,den);
 

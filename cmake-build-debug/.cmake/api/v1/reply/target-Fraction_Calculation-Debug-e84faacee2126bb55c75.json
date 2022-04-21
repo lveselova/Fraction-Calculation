@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Fraction-Testing"
+			"path" : "Fraction_Calculation"
 		}
 	],
 	"backtrace" : 1,
@@ -25,7 +25,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 16,
+				"line" : 8,
 				"parent" : 0
 			},
 			{
@@ -52,7 +52,7 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/Users/liza/Fraction-Calculation/."
+					"path" : "/Users/liza/Fraction-Calculation2/."
 				}
 			],
 			"language" : "CXX",
@@ -67,11 +67,11 @@
 			"sourceIndexes" : 
 			[
 				0,
-				3
+				1
 			]
 		}
 	],
-	"id" : "Fraction-Testing::@6890427a1f51a3e7e1df",
+	"id" : "Fraction_Calculation::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -87,8 +87,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Fraction-Testing",
-	"nameOnDisk" : "Fraction-Testing",
+	"name" : "Fraction_Calculation",
+	"nameOnDisk" : "Fraction_Calculation",
 	"paths" : 
 	{
 		"build" : ".",
@@ -101,20 +101,26 @@
 			"sourceIndexes" : 
 			[
 				0,
-				3
+				1
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1,
-				2
+				2,
+				3
 			]
 		}
 	],
 	"sources" : 
 	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "driver.cpp",
+			"sourceGroupIndex" : 0
+		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
@@ -130,12 +136,6 @@
 			"backtrace" : 1,
 			"path" : "fraction_exception.h",
 			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "fractionTesting.cpp",
-			"sourceGroupIndex" : 0
 		}
 	],
 	"type" : "EXECUTABLE"
