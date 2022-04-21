@@ -12,7 +12,11 @@ It utilizes a Fraction class to store the numerical data as well as perform calc
 ## Setup
 To run this project, install it locally:
 
-1) Within the project enter the build-dir and build the project with 
+1) Within the project enter the build-dir 
+```
+cd build-dir
+```
+and build the project with 
 ```
 cmake ../CMakeLists.txt
 ```
