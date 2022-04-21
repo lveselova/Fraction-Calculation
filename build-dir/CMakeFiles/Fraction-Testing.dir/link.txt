@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names "CMakeFiles/Fraction-Testing.dir/fraction.cpp.o" "CMakeFiles/Fraction-Testing.dir/fractionTesting.cpp.o" -o Fraction-Testing 
